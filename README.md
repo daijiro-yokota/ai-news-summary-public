@@ -1,8 +1,7 @@
 **Article Summarizer and Slack Notifier**
-
 This Python project fetches recent articles (example: RevenueCat blog), summarizes them using OpenAI's GPT model, evaluates relevance to the user, extracts keywords, and posts summaries to a Slack channel if they meet the criteria.
 
-Features
+**Features**
 
 1. Article Discovery: Scrapes the RevenueCat blog homepage for new posts (excluding author pages and RSS feeds).
 2. Content Extraction: Parses each article’s title, body text, and publication date.
@@ -11,13 +10,12 @@ Features
 5. Relevance Scoring: Evaluates each summary’s relevance (0–100) for marketing audiences based on a predefined prompt.
 6. Slack Integration: Posts summaries that meet a configurable relevance threshold to Slack with title, date, summary, relevance score, and keywords.
 
-Prerequisites
-
+**Prerequisites**
 - Python 3.8+
 - A Slack incoming webhook URL
 - An OpenAI API key with access to GPT-4 models
 
-Installation
+**Installation**
 
 Step 1: Clone the repository:
 -- git clone https://github.com/your-org/revenuecat-summarizer.git
@@ -34,7 +32,7 @@ Step 4: Configure environment variables (in a .env file or your shell):
 -- OPENAI_API_KEY
 -- SLACK_WEBHOOK_URL
 
-Usage
+**Usage**
 
 Run the script directly:
 
@@ -56,7 +54,7 @@ Project Structure
 ├── main.py       # Main script
 └── README.md           # This file
 
-Functions Overview
+**Functions Overview**
 
 - get_revenuecat_articles(): Returns list of blog URLs to process.
 - extract_revenuecat_article(url): Parses the title, content, and date.
@@ -65,12 +63,12 @@ Functions Overview
 - evaluate_relevance(summary_text): Calls the OpenAI API to score relevance.
 - process_revenuecat_articles(threshold): Orchestrates the pipeline and returns high-scoring articles.
 
-Contributing
+**Contributing**
 
 Fork the repository and create your feature branch.
 Write clear, concise commit messages.
 Submit a pull request with a description of your changes.
 
-License
+**License**
 
 This project is licensed under the MIT License. See the LICENSE file for details.
