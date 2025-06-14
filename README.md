@@ -51,8 +51,8 @@ Edit the threshold parameter in the process_revenuecat_articles() call at the bo
 
 Project Structure
 
-├── main.py       # Main script
-└── README.md           # This file
+── main.py # Main script
+── README.md # This file
 
 **Functions Overview**
 
