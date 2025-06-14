@@ -19,24 +19,20 @@ Prerequisites
 
 Installation
 
-Clone the repository:
+Step 1: Clone the repository:
+-- git clone https://github.com/your-org/revenuecat-summarizer.git
+-- cd revenuecat-summarizer
 
-git clone https://github.com/your-org/revenuecat-summarizer.git
-cd revenuecat-summarizer
+Step 2: (Optional) Create and activate a virtual environment:
+-- python3 -m venv venv
+-- source venv/bin/activate
 
-(Optional) Create and activate a virtual environment:
+Step 3: Install dependencies:
+-- pip install -r requirements.txt
 
-python3 -m venv venv
-source venv/bin/activate
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Configure environment variables (in a .env file or your shell):
-
-- OPENAI_API_KEY
-- SLACK_WEBHOOK_URL
+Step 4: Configure environment variables (in a .env file or your shell):
+-- OPENAI_API_KEY
+-- SLACK_WEBHOOK_URL
 
 Usage
 
