@@ -1,4 +1,4 @@
-*Article Summarizer and Slack Notifier*
+**Article Summarizer and Slack Notifier**
 This Python project fetches recent articles (example: RevenueCat blog), summarizes them using OpenAI's GPT model, evaluates relevance to the user, extracts keywords, and posts summaries to a Slack channel if they meet the criteria.
 
 **Features**
